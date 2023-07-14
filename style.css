@@ -1,0 +1,166 @@
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+    color: #000;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.container2{
+    margin-inline: auto;
+    width: min(90%, 70, 5rem);
+}
+
+#navbar {
+    background-color: #c79304;
+    color: #fff;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+    
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+#navbar a:hover{
+    background: #000;
+    border-radius: 3px;
+}
+
+.submenu-1 {
+    display: none;
+}
+
+#navbar ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    background: #ece924;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+#navbar ul li:hover .submenu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+#navbar ul li:hover .submenu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: center;
+}
+
+#navbar ul li:hover .submenu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.block1 {
+    background-image: url(images/upsa6.jpg);
+    background-position: center right;
+}
+
+.block1 h1{
+    color: #a58004;
+    font-size: 30px;
+}
+
+h2,
+h3 {
+    color: #3b3803;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header,
+nav,
+section{
+    padding: 2rem 0;
+}
+
+@media (min-width: 40em) {
+    header,
+    section {
+     padding: 5rem 0;
+    }
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+.block2 {
+    color:#fff;
+    background-color: #0e03aa;
+}
+
+.block3 {
+    color: #fff;
+    background-color: #ccc01f;
+}
+
+#main-footer {
+    background-color: #0c0574;
+    color: #ffffff;
+}
